@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  overflow: hidden;
   font-family: "Raleway", sans-serif;
 }
 
@@ -41,23 +40,40 @@ div.main div.center > div.left {
   width: 35%;
   position: relative;
 }
+div.main div.center > div.left div.new {
+  position: absolute;
+  z-index: 3;
+  top: 100px;
+  left: 100px;
+  color: rgb(200, 200, 200);
+}
+div.main div.center > div.left div.new * {
+  margin: 10px;
+}
 div.main div.center > div.left div.right-border {
   position: absolute;
+  z-index: 2;
   width: 4px;
   height: 0;
   background-color: red;
   right: 0;
-  transition: 5s;
+  transition: 2.5s;
   top: 0;
 }
 div.main div.center > div.left img {
   width: 100%;
   height: 100%;
 }
+div.main div.center > div.left > .image {
+  position: absolute;
+  transition: 2s;
+}
 div.main div.center > div.right {
   width: 65%;
   height: 100%;
   display: flex;
+  background-color: white;
+  z-index: 2;
 }
 div.main div.center > div.right > * {
   width: 80%;
